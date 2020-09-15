@@ -40,8 +40,10 @@ public class PrincipalController {
     EspecialidadesDAO ed;
     
     public List<Especialidades> getEspecialidades (int port){
-        //String uri = "http://localhost:"+port+"/ensayo4/api/lesp";
-        String uri = "http://localhost:8085/ensayo4/api/lesp";
+        String uri = "http://localhost:"+port+"/ensayo4/api/lesp";
+        
+        //Para probar JUnit
+        //String uri = "http://localhost:8085/ensayo4/api/lesp";
         
         RestTemplate restTemplate = new RestTemplate();
         
@@ -51,8 +53,10 @@ public class PrincipalController {
     }
     
     public List<Doctores> getDoctores (int port, int idEspecialidad){
-        //String uri = "http://localhost:"+ port +"/ensayo4/api/ldoctores/" + idEspecialidad;
-        String uri = "http://localhost:8085/ensayo4/api/ldoctores/" + idEspecialidad;
+        String uri = "http://localhost:"+ port +"/ensayo4/api/ldoctores/" + idEspecialidad;
+        
+        //Para probar Junit
+        //String uri = "http://localhost:8085/ensayo4/api/ldoctores/" + idEspecialidad;
         
         RestTemplate restTemplate = new RestTemplate();
         
